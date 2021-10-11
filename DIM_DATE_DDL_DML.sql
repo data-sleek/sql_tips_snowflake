@@ -3,7 +3,7 @@
 --==================================================
 -- Create table script for Dimension DIM_DATE
 create or replace table DIM_DATE (
-	DATE_PKEY				number(9) PRIMARY KEY,
+	DATE_KEY				number(9) PRIMARY KEY,
 	DATE					date not null,
 	FULL_DATE_DESC			varchar(64) not null,
 	DAY_NUM_IN_WEEK			number(1) not null,

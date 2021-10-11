@@ -3,7 +3,7 @@
 ==================================================
 -- Create table script for Dimension DIM_TIMEOFDAY
 create or replace table DIM_TIMEOFDAY (
-    TIMEOFDAY_PKEY		number(6)	PRIMARY KEY,
+    TIMEOFDAY_KEY		number(6)	PRIMARY KEY,
     TIMEOFDAY_24HR		time not null,
     TIMEOFDAY_12HR		varchar(64) not null,
     HROFDAY				number(6) not null,
