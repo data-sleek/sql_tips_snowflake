@@ -394,6 +394,8 @@ select DATE_PKEY,
 			from table(generator(rowcount => 8401)) /*<< Set to generate 20 years. Modify rowcount to increase or decrease size*/
 	)v;
 
+
+
 --Miscellaneous queries
 select * from  DIM_DATE where date > '2021-01-01' order by date limit 300 ;
 
