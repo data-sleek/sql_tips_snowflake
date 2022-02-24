@@ -142,10 +142,10 @@ select
         'Y' as CURRENT_ROW_ID,
         to_date(current_timestamp) as EFFECTIVE_DATE,
         to_date('9999-12-31') as EXPIRY_DATE
-		from table(generator(rowcount => 86400))
+		from table(generator(rowcount => 1440))
 	) TEMP_QUERY;
 
--- Miscellaneous queries
+-- Miscellaneous queries 
 select * from  DIM_TIMEOFDAY;
 
 --delete from DIM_TIMEOFDAY;												
